@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <%- include('head.ejs'); %>
+</head>
+
+<body>
+    <%- include('nav.ejs'); %>
+    <form action="/contact" method="post">
+    <div class="mb-3">
+        <label for="exampleInputEmail1" class="form-label">Nom</label>
+        <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" name="Nom">
+      </div>
+      <div class="mb-3">
+        <label for="exampleInputEmail1" class="form-label">Prénom</label>
+        <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" name="Prenom">
+      </div>
+    <div class="mb-3">
+      <label for="exampleInputEmail1" class="form-label">Email address</label>
+      <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" name="mail">
+    </div>
+    <div class="form-floating">
+        <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea2" style="height: 100px" name="message"></textarea>
+        <label for="floatingTextarea2">Comments</label>
+      </div>
+      <button type="submit" class="btn btn-primary">Submit</button>
+    </form>
+<%- include('footer.ejs'); %>
+</body>
+</html>
